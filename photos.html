@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            background-color: black;
+            position: relative;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .container img {
+            border: 5px solid white;
+            position: absolute;
+        }
+        #img1 {
+            top: 5%;
+            left: 2.5%;
+            width: 250px;
+            height: 300px;
+        }
+        #img2 {
+            top: calc(35% + 80px);
+            left: calc(29% - 35px);
+            width: 200px;
+            height: 250px;
+        }
+        #img3 {
+            top: calc(40% - 35%);
+            left: calc(18% + 30% - 20px);
+            width: 28%;
+            height: auto;
+        }
+        #img4 {
+            top: calc(30% + 80px);
+            left: calc(18% + 35% + 30% - 50px);
+            width: 220px;
+            height: 300px;
+        }
+        #note {
+            position: absolute;
+            top: calc(59% + 35%);
+            left: calc(23% + 30% - 20px);
+            color: white;
+            font-size: 15.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./assets/images/Us in India.mp4">
+            <img id="img1" src="./assets/images/us.png" alt="Image 1"/>
+        </a>
+        <a href="./assets/images/LeavingVideo.mp4">
+            <img id="img2" src="./assets/images/img5.jpeg" alt="Image 2"/>
+        </a>
+        <a href="./first.html">
+            <img id="img3" src="./assets/images/img2.jpeg" alt="Image 3"/>
+        </a>
+        <a href="./assets/images/video.mp4">
+            <img id="img4" src="./assets/images/img3.jpeg" alt="Image 4"/>
+        </a>
+        <div id="note">Click on the pictures for a surprise!</div>
+    </div>
+</body>
+</html>
